@@ -8,3 +8,9 @@
 
   <%= button_to "Destroy this article", @article, method: :delete %>
 </div>
+
+
+<div style="margin-top: 30px;">
+  <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+</div>
+
